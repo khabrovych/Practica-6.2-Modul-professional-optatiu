@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoli de Sviatoslav Khabrovych</title>
+    <link rel="stylesheet" href="../css/formulari.css">
+</head>
+
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inici</a></li>
+                <li><a href="./sobre_mi.html">Sobre mi</a></li>
+                <li><a href="estudis.html">Estudis</a></li>
+                <li><a href="../pages/contacta.html">Contacta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Residència de desenvolupadors</h1>
+    <h3>Omple les teves dades i el teu perfil tècnic</h3>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dades personals</legend>
+            <label for="nom">Nom i cognoms</label>
+            <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom..." required>
+
+            <label for="email">Correu electrònic</label>
+            <input type="email" id="email" name="email" placeholder="nom@example.com" required>
+
+            <label for="telefon">Telèfon</label>
+            <input type="telefon" id="telefon" name="telefon" placeholder="9 xifres" required>
+
+            <label for="data de naixement">Data de naixement</label>
+            <input id="data de naixement" name="data de naixement" placeholder="dd/mm/aaaa" required></input>
+
+            <label for="pais">País</label>
+            <select name="pais" id="pais">
+                <option value="" disabled selected>Tria un país</option>
+                <option value="Spain">Spain</option>
+                <option value="Italy">Italy</option>
+                <option value="France">France</option>
+                <option value="Portugal">Portugal</option>
+            </select>
+
+            <label for="ciutat">Ciutat</label>
+            <input id="ciutat" name="ciutat" placeholder="Escriu la teva ciutat..." required></input>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Perfil tècnic</legend>
+
+            <label for="anys d'experiencia">Anys d'experiència</label>
+            <input type="range" id="anys d'experiencia" name="anys d'experiencia" min="0" max="10" step="1" value="5">
+
+            <fieldset>
+                <legend>Llenguatges que domines</legend>
+                  <div class="opcions-horitzontals">
+                 <label><input type="checkbox" name="llenguatges" value="HTML"> HTML</label>
+                 <label><input type="checkbox" name="llenguatges" value="CSS"> CSS</label>
+                 <label><input type="checkbox" name="llenguatges" value="JavaScript"> JavaScript</label>
+                 <label><input type="checkbox" name="llenguatges" value="PHP"> PHP</label>
+                 <label><input type="checkbox" name="llenguatges" value="Python"> Python</label>
+                 <label><input type="checkbox" name="llenguatges" value="Java"> Java</label>
+                 </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nivell d'Anglès</legend>
+                 <div class="opcions-horitzontals">
+                 <label><input type="radio" name="angles" value="A2"> A2</label>
+                 <label><input type="radio" name="angles" value="B1"> B1</label>
+                 <label><input type="radio" name="angles" value="B2"> B2</label>
+                 <label><input type="radio" name="angles" value="C1"> C1</label>
+                 </div>
+            </fieldset>
+            
+            <label for="rols">Rols preferits</label>
+            <select name="rols" id="rols" size="4">
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="devops">DevOps</option>
+                <option value="dades">Dades</option>
+            </select>
+
+            <label for="url">URL de GitHub</label>
+            <input id="url" name="url" placeholder="https://github.com/usuari">
+
+
+            <button type="reset">Esborra-ho tot</button>
+            
+            <button type="submit">Envia</button>
+
+
+
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>© 2026 Sviatoslav Khabrovych - Tots els drets reservats</p>
+    </footer>
+
+
+</body>
+
+</html>
